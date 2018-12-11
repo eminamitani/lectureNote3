@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'lecture-note-no3'
+project = 'note-3'
 copyright = '2018, Emi Minamitani'
 author = 'Emi Minamitani'
 
@@ -107,6 +107,7 @@ htmlhelp_basename = 'lecture-note-no3doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+latex_engine = 'platex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -114,7 +115,7 @@ latex_elements = {
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    # 'pointsize': '11pt',
 
     # Additional stuff for the LaTeX preamble.
     #
@@ -129,8 +130,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'lecture-note-no3.tex', 'lecture-note-no3 Documentation',
-     'Emi Minamitani', 'manual'),
+    (master_doc, 'lecture-note-no3.tex', 'note-3',
+     'Emi Minamitani', 'howto'),
 ]
 
 
