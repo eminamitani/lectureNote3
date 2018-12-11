@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>凝縮系物理学特論 講義資料その３ &#8212; lecture-note-no3 1.0 ドキュメント</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="nav-item nav-item-0"><a href="#">lecture-note-no3 1.0 ドキュメント</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">凝縮系物理学特論　講義資料その３</a><ul>
+<li><a class="reference internal" href="#id2">多粒子系のハミルトニアンの実際と応用例</a><ul>
+<li><a class="reference internal" href="#id3">電子電子相互作用</a><ul>
+<li><a class="reference internal" href="#id4">アンダーソンモデル</a></li>
+<li><a class="reference internal" href="#id5">ハバードモデル</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6">電子格子相互作用</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>凝縮系物理学特論　講義資料その３<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="id2">
+<h2>多粒子系のハミルトニアンの実際と応用例<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>前回までの講義で、場の演算子で表記することで、多体量子系でのハミルトニアンが１粒子系と
+似たような形で手に入ることや、場の演算子を生成消滅演算子と基底関数によって展開することで
+生成消滅演算子で表記されたハミルトニアンが得られることを紹介した。
+その具体的な応用例を紹介し、多体系での量子効果を扱う方法の感覚を紹介したい。</p>
+<div class="section" id="id3">
+<h3>電子電子相互作用<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id4">
+<h4>アンダーソンモデル<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>電子電子相互作用を含むシンプルなモデルとしては、互いに相互作用をしない自由電子的な
+伝導電子と、局在した軌道に存在するため強い電子-電子相互作用を感じる局在電子とが
+相互作用をする場合を考えた、アンダーソンモデルがあげられる。</p>
+<div class="math">
+\[H=\sum_{k\sigma} \epsilon_k c_{k\sigma}^\dagger c_{k\sigma}+\sum_{\sigma}E_d d_{\sigma}^\dagger
+d_{\sigma} +Un_{d\uparrow}n_{d\downarrow} +\sum_{k\sigma}(V_{0}
+c_{k\sigma}^\dagger d_{\sigma} + h.c.)\]</div>
+<p><span class="math">\(\sum_{k\sigma} \epsilon_k c_{k\sigma}^\dagger c_{k\sigma}\)</span>
+は自由な伝導電子の部分を表している。
+この項だけならば、それぞれの波数の電子が
+<span class="math">\(\epsilon_k\)</span>
+のエネルギーを持つという対角的なハミルトニアンになっている。
+しかし、その自由な伝導電子はトンネル効果によって局在軌道に入り込むことがある。
+それを記述しているのが
+<span class="math">\(\sum_{k\sigma}(V_{0} c_{k\sigma}^\dagger d_{\sigma} + h.c.)\)</span>
+の部分である。
+<span class="math">\(Un_{d\uparrow}n_{d\downarrow}\)</span>
+は局在電子が感じる電子間相互作用である。
+<span class="math">\(n_{d\uparrow}=d^\dagger_\uparrow d_\uparrow\)</span>
+のように電子数の演算子を書き直してやれば、前回の講義資料の最後に紹介した
+２体のハミルトニアンに相当していることがわかるだろう。</p>
+<p>このアンダーソンモデルは当初、非磁性金属中の磁性原子不純物が磁性を持つか否かを議論するためのモデルとして提案された。
+提案者のアンダーソン自身は、
+<span class="math">\(Un_{d\uparrow}n_{d\downarrow}\)</span>
+の２つの電子数演算子のうち、片方を平均値にしてしまうという平均場近似で、あるUの値を境に磁性を持つ場合と持たない場合に
+区別されるということを提唱した。
+しかし、このような不連続性は近似が単純であったために生じており、実際はより複雑な状況が生じている。
+複雑さの原因は、十分に低温で熱ゆらぎが少ない場合には、
+伝導電子と局在電子がトンネル効果によってすり替わる過程を介して
+全体のエネルギーを下げることが許容される、伝導電子と局在電子がスピン1重項をとった状態が
+現れてくることにある。伝導電子が１つ２つならこの１重項形成は大して複雑な問題ではないが、
+実際に出てくるのは無数の伝導電子がゆるく局在電子と１重項を組んだ状態である。
+この状態では伝導電子がゆるく局在電子に束縛されることになるので、
+その結果、電気抵抗が上昇する。</p>
+<p>通常の金属では電気抵抗は
+温度を下げて行くと単調に減少し、
+不純物散乱に由来する残留抵抗が最後に残る。
+しかし、磁性不純物を含んだ金属では上記のように
+冷やしていくと、一旦さがったのちに電気抵抗が上がるという、電気抵抗に極小点が現れる
+という現象が起きる。これを近藤効果という。</p>
+<p>近藤効果自体は、1920年ごろから発見されており、上に述べたメカニズムは
+日本人の近藤淳先生や芳田圭先生らによって60年代にあらかた解明されていた。
+しかし、量子多体状態を扱う困難により、厳密解や数値的に高精度な解が得られるようになったのは
+80年代以降である。</p>
+<p>最近でも、量子ドットの電子と、量子ドットにつながる電極の電子の間で
+近藤効果が起きることや、分子系でも起きることなど、もともとの磁性不純物が入った金属以外に
+様々な系で起きることが報告されており、今だに研究が続けられている問題の一つである。</p>
+</div>
+<div class="section" id="id5">
+<h4>ハバードモデル<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>アンダーソンモデルと似ているが、ありとあらゆるところで電子-電子相互作用が強力な場合に
+相当するのがハバードモデルである。
+ハバードモデルの場合は、局在電子と局在電子の間をホッピングする項と
+局在電子が感じる電子-電子相互作用の2つの項からなる。</p>
+<div class="math">
+\[H=\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.) +\sum_{i\sigma}Un_{d_i\uparrow}n_{d_i\downarrow}\]</div>
+<p>これはちょうど強束縛模型に電子間相互作用が加わったような形をしている。
+この模型がとくに対応するのが遷移金属酸化物である。
+遷移金属中のdやf電子は比較的原子に局在しており、酸素のp軌道を介して他の原子に飛び移ることができる。
+この飛び移りに対応するのが
+<span class="math">\(\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.)\)</span>
+の部分である。
+飛び移って運動エネルギーを稼ぐ効果と、電子間の相互作用が拮抗することで、
+ハバードモデルでは様々な状態が現れる。電子間相互作用のほうが飛び移りよりも大きければ、
+電子間相互作用がない場合には金属的になる占有数が1/2の状態でも電子は各原子にとどまり絶縁体の状態が現れる。
+このような電子間相互作用によって現れる絶縁体状態をモット絶縁体という。
+モット絶縁体状態は、反強磁性状態を取ることが多く、磁性を持った絶縁体は大抵がモット絶縁体である。
+興味深いことに酸化物中の元素の一部を置換して、占有数を1/2から少しずらしてやると、
+この磁性が大きく変わったり、超伝導状態が現れることがある。このような現象のメカニズムについては
+長らく研究がされているものの、高温超伝導を始めとして今だ決着がついていない物もある。</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>電子格子相互作用<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">検索ページ</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="nav-item nav-item-0"><a href="#">lecture-note-no3 1.0 ドキュメント</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Emi Minamitani.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.1 で生成しました。
+    </div>
+  </body>
+</html>
