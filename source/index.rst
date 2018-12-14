@@ -34,7 +34,7 @@
 :math:`\sum_{k\sigma} \epsilon_k c_{k\sigma}^\dagger c_{k\sigma}`　
 は自由な伝導電子の部分を表している。
 この項だけならば、それぞれの波数の電子が
-:math:`\epsilon_k` 
+:math:`\epsilon_k`
 のエネルギーを持つという対角的なハミルトニアンになっている。
 しかし、その自由な伝導電子はトンネル効果によって局在軌道に入り込むことがある。
 それを記述しているのが
@@ -68,7 +68,7 @@
 という現象が起きる。これを近藤効果という。
 
 近藤効果自体は、1920年ごろから発見されており、上に述べたメカニズムは
-日本人の近藤淳先生や芳田圭先生らによって60年代にあらかた解明されていた。
+日本人の近藤淳先生や芳田奎先生らによって60年代にあらかた解明されていた。
 しかし、量子多体状態を扱う困難により、厳密解や数値的に高精度な解が得られるようになったのは
 80年代以降である。
 
@@ -85,7 +85,7 @@
 局在電子が感じる電子-電子相互作用の2つの項からなる。
 
 .. math::
-   H=\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.) +\sum_{i\sigma}Un_{d_i\uparrow}n_{d_i\downarrow} 
+   H=\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.) +\sum_{i\sigma}Un_{d_i\uparrow}n_{d_i\downarrow}
 
 これはちょうど強束縛模型に電子間相互作用が加わったような形をしている。
 この模型がとくに対応するのが遷移金属酸化物である。
@@ -105,10 +105,185 @@
 
 電子格子相互作用
 ^^^^^^^^
+電子格子相互作用もまた、典型的な多体効果である。格子振動、すなわちフォノンが生じると、原子の座標の変化とともに
+電子が感じるポテンシャルの変化が生じる。それによって電子の波動関数が変調されるのが
+電子格子相互作用が生じる原理である。電子格子相互作用は、電気抵抗、ポーラロン形成、電荷密度波、熱電効果から超伝導に至るまで固体物理のなかの
+様々な現象の元になっている。
+
+まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書 [Ref1]_をベースにしている。
+電子とイオン、それらの振動から成るハミルトニアンは
+以下のように定義される。
+
+.. math::
+
+   \begin{aligned}
+   H=H_p+H_e+H_{ei} \\
+   H_p=\sum_{q\lambda} \omega_{q\lambda} \alpha_{q\lambda}^\dagger
+   \alpha_{q\lambda} \\
+   H_e =\sum_{i} \left [ \frac{p_i^2}{2m} + \frac{e^2}{2} \sum_{j\neq i}
+   \frac{1}{r_{ij}} \right] \\
+   H_{ei} = \sum_{ij} V(\bf{r_i} -  \bf{R_j})\end{aligned}
+
+:math:`H_p`\ はフォノンのハミルトニアンであり、\ :math:`H_e`\ は電子系のハミルトニアン、そして\ :math:`H_{ei}`\ は電子とイオンの間の相互作用を表すハミルトニアンである。
+フォノンが生じるというのは\ :math:`H_{ei}`\ の中の\ :math:`\bf{R_j}`\ が変化することであると捉えることができる。
+平衡状態での原子の座標を\ :math:`\bf{R_j^{0}}`\ として、一般的な座標を変位\ :math:`\bf{Q_j}`\ を用いて\ :math:`\bf{R_j}=\bf{R_j^{0}}+\bf{Q_j}`
+で表す。変位は小さいものとして、変位についてのテイラー展開を実行すると
+
+.. math::
+
+   \begin{aligned}
+   V({\bf r_i} - {\bf R_j^{0}}-{\bf Q_j})=V({\bf r_i} - {\bf
+   R_j^{0}})-{\bf Q_j}\cdot \nabla V({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}
+
+が得られる。この第2項が電子フォノン相互作用を与える。
+第一項は、原子の変位がない状態での電子－イオン相互作用である。この第一項と\ :math:`H_e`\ が
+電子系の無摂動ハミルトニアンであるとみなし、そのBloch状態を元に、摂動である第2項の評価を行うのが
+ボルン・オッペンハイマー近似に則った通常の評価方法である。動的ヤーンテラー効果等の場合にはこの方法はうまくいかない。
+
+第二項が電子フォノン相互作用であることは、変位\ :math:`\bf{Q_j}`\ をフォノンの生成消滅演算子を使って書き直せば分かる。
+フォノンは通常「格子振動」であり、結晶についての議論をされることが多いので、逆格子空間をつかったフーリエ変換した形で考えてみる。
+電子イオン相互作用のフーリエ変換は
+
+.. math::
+
+   \begin{aligned}
+   V_{ei} ({\bf r}) = \frac{1}{N} \sum_{q} V_{ei}({\bf q})\exp^{i{\bf q\cdot r}}\end{aligned}
+
+である。これを微分することで
+
+.. math::
+
+   \begin{aligned}
+   \nabla V_{ei} ({\bf r}) = \frac{i}{N} \sum_{q} {\bf q} V_{ei}({\bf
+   q})\exp^{i{\bf q\cdot r}}\end{aligned}
+
+が得られる。 電子フォノン相互作用に相当する項全体を考えると
+
+.. math::
+
+   \begin{aligned}
+   V_{ep}&=\sum_j  {\bf Q_j}\cdot \nabla V(i{\bf r_i} - {\bf
+   R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V(q) \exp^{i{\bf r_i} - {\bf
+   R_j^{0}}} \nonumber \\
+   &=\frac{i}{N} \sum_j \sum_q
+   {\bf Q_j}\cdot  {\bf q}V(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
+   \nonumber
+   \\
+   &= \frac{i}{N} \sum_j \sum_q {\bf Q_j} \exp^{-i{\bf q} \cdot {\bf
+   R_j^{0}}}\cdot  {\bf q}V(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}
+
+変位ベクトルのフーリエ変換した形は
+
+.. math::
+
+   \begin{aligned}
+   {\bf Q_j}(t)=i\sum_q \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q
+   (\alpha_q \exp^{(-i\omega_q t)}+\alpha_q^\dagger \exp^{(i\omega_q t)})
+   \exp^{(i{\bf q\cdot R_i^{(0)}})}\end{aligned}
+
+で与えられる。\ :math:`\xi_q`\ は偏極ベクトルと呼ばれる、振動モードによって原子がどの方向に変位するかを表す3N（3次元の場合）の要素数を持つベクトルである。
+Mはイオンの質量である。変位ベクトルの時間依存性を無視して
+
+.. math::
+
+   \begin{aligned}
+   {\bf Q_j}(t)=i\sum_q \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q
+   (\alpha_q +\alpha_q^\dagger )
+   \exp^{(i{\bf q\cdot R_i^{(0)}})}\end{aligned}
+
+とし、これを電子フォノン相互作用の項に代入してやれば
+
+.. math::
+
+   \begin{aligned}
+   V_{ep}&=\frac{i}{N} \sum_j \sum_{qq'}
+   \left(\frac{\hbar}{2MN\omega_q'}\right)^\frac{1}{2} \xi_q' (\alpha_q' +\alpha_q'^\dagger ) e^{i{\bf q'\cdot R_i^{(0)}}} \cdot e^{-i{\bf q} \cdot {\bf
+   R_j^{0}}} \cdot  {\bf q}V(q)
+   e^{i {\bf q} \cdot{\bf r_i}}  \\
+   &=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V(q) \cdot
+   \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )\end{aligned}
+
+とすれば良いように思う。しかし、ここでqの和に関する問題を解消しなくてはいけない。
+ここでのqはフーリエ変換から定義されるものなので、逆格子空間全域をカバーする。
+しかし、結晶における固有状態はブロッホの定理に従い、位相と周期関数の積で書かれ、
+それを規定する波数は第一ブリルアンゾーン内のものに限られる。なので、フォノンの生成消滅演算子の波数
+qを逆格子空間全域にしておくのは良くない。
+そこで、電子の場合と同様に、波数空間内での和を、第一ブリルアンゾーン内の波数qと逆格子ベクトルGに関する和で表現することを行う。
+この表記を用いると
+
+.. math::
+
+   \begin{aligned}
+   V_{ep}=-\sum_{qG}e^{i {\bf (q+G)} \cdot{\bf r_i}} {\bf (q+G)}V(q+G) \cdot
+   \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )
+   \end{aligned}
+
+が最終的に得られる。 このポテンシャル :math:`V_{ep}` を元に第二量子化形式のハミルトニアンを求めておく。
+
+ブロッホ波動関数を用いた電子の場の演算子を以下のように定義する。
+
+.. math::
+
+   \begin{aligned}
+   \psi(r) = \sum_{\mathbf{k},\eta}c_{\mathbf{k}\eta}\phi_{\mathbf{k}\eta}(r), \\
+   \psi^{\dagger}\left( r \right) =
+   \sum_{\mathbf{k},\eta}{c_{\mathbf{k}\eta}^{\dagger}\phi_{\mathbf{k}\eta}^{*}(r)}\end{aligned}
+
+ここで\ :math:`\phi_{\mathbf{k}\eta}(r)`\ は第一ブリルアンゾーン内の波数\ :math:`\mathbf{k}`\ を持つバンド\ :math:`\eta`\ の電子状態のブロッホ波動関数であり、
+:math:`c_{\mathbf{k}\eta}`\ はその電子状態に対する消滅演算子を指す。ブロッホ波動関数は
+
+.. math::
+
+   \begin{aligned}
+   \phi_{\mathbf{k}\eta}\left( r \right) = u_{\mathbf{k}\eta}\exp{\left(
+   i\mathbf{k} \cdot \mathbf{r} \right)}\end{aligned}
+
+で表されるものとする。
+
+電子フォノン相互作用に相当する第二量子化形式のハミルトニアンは
+
+.. math::
+   H_{ep} &= - \sum_{\lambda}\int_{}^{}dr \psi^{\dagger}(r)V_{ep}(r)\psi(r) \\
+   &= -i\sum_{\mathbf{k,k'},\eta,\eta^{'}} \sum_{\mathbf{qG}}
+   \int dr\phi^*_{\mathbf{k'}\eta'}(r)e^{i(\mathbf{q+G}) \cdot
+   \mathbf{r}} \mathbf{\xi}_{\mathbf{q}}\cdot
+   (\mathbf{q+G})V_{ei}( \mathbf{q+G}) \nonumber \\
+   &\left(\frac{\hbar}{2MN\omega_{\mathbf{q}\lambda}} \right)^{\frac{1}{2}}
+   \phi_{\mathbf{k}\eta}(r)c_{\mathbf{k'}\eta^{'}}^{\dagger}
+   c_{\mathbf{k}\eta}\left(\alpha_{q}{+ \alpha_{-q}^{\dagger}}
+   \right) \nonumber \\
+   &= -i\sum_{\mathbf{k,k'},\eta,\eta'}\sum_{\mathbf{qG}}\int dr
+   u_{\mathbf{k'}\eta'}^{*}\ e^{i (\mathbf{k -k'+ q +G}) \cdot \mathbf{r}}
+   \mathbf{\xi}_{\mathbf{q}}\mathbf{\cdot}(\mathbf {q + G})V_{ei}\left( \mathbf{q}
+   + \mathbf{G} \right)\nonumber \\
+   & \left( \frac{\hbar}{2MN\omega_{q}}
+   \right)^{\frac{1}{2}}\ u_{\mathbf{k}\eta}\ c_{\mathbf{k'}\eta'}^{\dagger}c_{\mathbf{k}\eta}
+   \left( \alpha_{q}+ \alpha_{-q}^{\dagger} \right)
+   :label: Hep
+
+で表される。この積分は\ :math:`\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{}\mathbf{= q}`
+または\ :math:`\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{} = \mathbf{q} + \mathbf{G}`\ の場合のみ、有限の値を持つ。前者の場合をNormal
+process、後者をUmklapp processと呼ぶ。
+
+このような議論から、一般に、電子フォノン相互作用は
+
+.. math::
+
+   \begin{aligned}
+   H_{ep} =
+   \sum_{\mathbf{k}\eta\eta'}{\sum_{\mathbf{q}}^{}M_{\mathbf{kq}}^{\eta\eta'}}c_{\mathbf{k
+   + q}\eta'}^{\dagger}c_{\mathbf{k}\eta}\left(\alpha_q+ \alpha_{-q}^{\dagger} \right)\end{aligned}
+
+の形にかけることが分かる。これは、ちょうど波数\ :math:`\mathbf{k}`\ バンド\ :math:`\eta`\ の電子が波数\ :math:`\mathbf{q}`
+(:math:`- \mathbf{q}`)のフォノンを吸収（放出）することで波数\ :math:`\mathbf{k + q}`\ バンド\ :math:`\eta'`\ の電子が生じるプロセスに対応している。
+:math:`M_{kq}^{\eta\eta'}`\ は式(:eq:`Hep`)に含まれる、ポテンシャルの微分とブロッホ波動関数から得られる電子フォノン相互作用行列要素である。
 
 
-Indices and tables
+
+
+References
 ==================
+.. [Ref1] Many-Particle Physics
 
 * :ref:`genindex`
 * :ref:`search`
