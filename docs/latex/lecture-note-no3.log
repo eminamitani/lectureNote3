@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.3.5)  14 DEC 2018 18:01
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.3.5)  14 DEC 2018 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,7 +7,7 @@ entering extended mode
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./sphinxhowto.cls
-Document Class: sphinxhowto 2016/10/12 v1.5 Document class (Sphinx HOWTO)
+Document Class: sphinxhowto 2018/09/18 v1.8.1 Document class (Sphinx HOWTO)
 (c:/w32tex/share/texmf-dist/tex/platex/base/jreport.cls
 Document Class: jreport 2006/06/27 v1.6 Standard pLaTeX class
 \c@@paper=\count81
@@ -35,38 +35,6 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 ))
 \sphinxpxdimen=\dimen121
 
-(c:/w32tex/share/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
-)
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
-)
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(c:/w32tex/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count92
-\Gm@cntv=\count93
-\c@Gm@tempcnt=\count94
-\Gm@bindingoffset=\dimen122
-\Gm@wd@mp=\dimen123
-\Gm@odd@mp=\dimen124
-\Gm@even@mp=\dimen125
-\Gm@layoutwidth=\dimen126
-\Gm@layoutheight=\dimen127
-\Gm@layouthoffset=\dimen128
-\Gm@layoutvoffset=\dimen129
-\Gm@dimlist=\toks16
-
-(c:/w32tex/share/texmf-dist/tex/latex/geometry/geometry.cfg))
 (c:/w32tex/share/texmf-dist/tex/platex/base/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
 
@@ -90,51 +58,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen130
+\@emptytoks=\toks15
+\ex@=\dimen122
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen131
+\pmbraise@=\dimen123
 )
 (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count92
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count93
+\leftroot@=\count94
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count95
+\DOTSCASE@=\count96
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box41
 \strutbox@=\box42
-\big@size=\dimen132
+\big@size=\dimen124
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
-\tag@help=\toks18
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
-\andhelp@=\toks19
-\eqnshift@=\dimen133
-\alignsep@=\dimen134
-\tagshift@=\dimen135
-\tagwidth@=\dimen136
-\totwidth@=\dimen137
-\lineht@=\dimen138
-\@envbody=\toks20
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks16
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks17
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks18
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
@@ -150,30 +118,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(c:/w32tex/share/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip46
-\LTright=\skip47
-\LTpre=\skip48
-\LTpost=\skip49
-\LTchunksize=\count107
-\LTcapwidth=\dimen139
-\LT@head=\box43
-\LT@firsthead=\box44
-\LT@foot=\box45
-\LT@lastfoot=\box46
-\LT@cols=\count108
-\LT@rows=\count109
-\c@LT@tables=\count110
-\c@LT@chunks=\count111
-\LT@p@ftn=\toks22
 ) (./sphinx.sty
-Package: sphinx 2016/12/11 v1.5.1 LaTeX package (Sphinx markup)
+Package: sphinx 2018/11/06 v1.8.2 LaTeX package (Sphinx markup)
 
+(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
@@ -191,23 +148,20 @@ eX Live/ChoF)
 
 (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
+\Gin@req@height=\dimen131
+\Gin@req@width=\dimen132
 )
 (c:/w32tex/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip50
-\f@ncyO@elh=\skip51
-\f@ncyO@erh=\skip52
-\f@ncyO@olh=\skip53
-\f@ncyO@orh=\skip54
-\f@ncyO@elf=\skip55
-\f@ncyO@erf=\skip56
-\f@ncyO@olf=\skip57
-\f@ncyO@orf=\skip58
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
 )
 (c:/w32tex/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -293,43 +247,71 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box47
-\beforetitleunit=\skip59
-\aftertitleunit=\skip60
-\ttl@plus=\dimen142
-\ttl@minus=\dimen143
-\ttl@toksa=\toks23
-\titlewidth=\dimen144
-\titlewidthlast=\dimen145
-\titlewidthfirst=\dimen146
+\ttl@box=\box43
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen133
+\ttl@minus=\dimen134
+\ttl@toksa=\toks21
+\titlewidth=\dimen135
+\titlewidthlast=\dimen136
+\titlewidthfirst=\dimen137
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 
 (c:/w32tex/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen147
-\extrarowheight=\dimen148
-\NC@list=\toks24
-\extratabsurround=\skip61
-\backup@length=\skip62
+\col@sep=\dimen138
+\extrarowheight=\dimen139
+\NC@list=\toks22
+\extratabsurround=\skip57
+\backup@length=\skip58
 )
-\TY@count=\count112
-\TY@linewidth=\dimen149
-\tymin=\dimen150
-\tymax=\dimen151
-\TY@tablewidth=\dimen152
+\TY@count=\count104
+\TY@linewidth=\dimen140
+\tymin=\dimen141
+\tymax=\dimen142
+\TY@tablewidth=\dimen143
 )
-(c:/w32tex/share/texmf-dist/tex/latex/base/makeidx.sty
+(c:/w32tex/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip59
+\LTright=\skip60
+\LTpre=\skip61
+\LTpost=\skip62
+\LTchunksize=\count105
+\LTcapwidth=\dimen144
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count106
+\LT@rows=\count107
+\c@LT@tables=\count108
+\c@LT@chunks=\count109
+\LT@p@ftn=\toks23
+)
+(c:/w32tex/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box48
+\sift@deathcycles=\count110
+\@vwid@loff=\dimen145
+\@vwid@roff=\dimen146
+)
+(./sphinxmulticell.sty
+Package: sphinxmulticell 2017/02/23 v1.6 better span rows and columns of a tabl
+e (Sphinx team)
+\sphinx@TY@tablewidth=\dimen147
+) (c:/w32tex/share/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-(c:/w32tex/share/texmf-dist/tex/latex/framed/framed.sty
+) (c:/w32tex/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip63
-\fb@frw=\dimen153
-\fb@frh=\dimen154
-\FrameRule=\dimen155
-\FrameSep=\dimen156
+\fb@frw=\dimen148
+\fb@frh=\dimen149
+\FrameRule=\dimen150
+\FrameSep=\dimen151
 )
 (c:/w32tex/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -352,40 +334,32 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count113
+\FV@CodeLineNo=\count111
 \FV@InFile=\read1
-\FV@TabBox=\box48
-\c@FancyVerbLine=\count114
-\FV@StepNumber=\count115
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count112
+\FV@StepNumber=\count113
 \FV@OutFile=\write3
+) (./footnotehyper-sphinx.sty
+Package: footnotehyper-sphinx 2017/10/27 v1.7 hyperref aware footnote.sty for s
+phinx (JFB)
+\FNH@notes=\box50
+\FNH@width=\dimen152
 )
-(c:/w32tex/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
-Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box49
-)
-(./footnotehyper-sphinx.sty
-Package: footnotehyper-sphinx 2016/10/27 v0.9f hyperref aware footnote.sty for 
-sphinx (JFB)
-
-(c:/w32tex/share/texmf-dist/tex/latex/mdwtools/footnote.sty
-Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box50
-\fn@width=\dimen157
-))
 (c:/w32tex/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count116
-\float@exts=\toks25
+\c@float@type=\count114
+\float@exts=\toks24
 \float@box=\box51
-\@float@everytoks=\toks26
+\@float@everytoks=\toks25
 \@floatcapt=\box52
 )
 (c:/w32tex/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen158
-\WF@size=\dimen159
-\c@WF@wrappedlines=\count117
+\wrapoverhang=\dimen153
+\WF@size=\dimen154
+\c@WF@wrappedlines=\count115
 \WF@box=\box53
-\WF@everypar=\toks27
+\WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 )
 (c:/w32tex/share/texmf-dist/tex/latex/parskip/parskip.sty
@@ -397,6 +371,28 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 (c:/w32tex/share/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
+)
+(c:/w32tex/share/texmf-dist/tex/latex/capt-of/capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+) (./needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+
+! LaTeX Error: File `remreset.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+))
+(./sphinxhighlight.sty
+Package: sphinxhighlight 2016/05/29 stylesheet for highlighting with pygments
 )
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
@@ -416,54 +412,54 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-\sphinxverbatimsep=\dimen160
-\sphinxverbatimborder=\dimen161
-\sphinxshadowsep=\dimen162
-\sphinxshadowsize=\dimen163
-\sphinxshadowrule=\dimen164
-\spx@notice@border=\dimen165
-\pdfoutput=\count118
-\spx@VerbatimTitleBox=\box54
+\sphinxverbatimsep=\dimen155
+\sphinxverbatimborder=\dimen156
+\sphinxshadowsep=\dimen157
+\sphinxshadowsize=\dimen158
+\sphinxshadowrule=\dimen159
+\spx@notice@border=\dimen160
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 566.
+
+(c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+\spx@image@box=\box54
+\c@literalblock=\count116
 \sphinxcontinuationbox=\box55
 \sphinxvisiblespacebox=\box56
+\sphinxVerbatim@TitleBox=\box57
 \py@argswidth=\skip64
 \lineblockindentation=\skip65
-\spx@image@box=\box57
-
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-)
 \DUlineblockindent=\skip66
-\c@literalblock=\count119
-
-(c:/w32tex/share/texmf-dist/tex/latex/capt-of/capt-of.sty
-Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
-) (./needspace.sty
-Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-** (sphinx) defining (legacy) text style macros without \sphinx prefix
-** if clashes with packages, set latex_keep_old_macro_names=False in conf.py
-(./sphinxhighlight.sty
-Package: sphinxhighlight 2016/05/29 stylesheet for highlighting with pygments
-))
-(c:/w32tex/share/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen166
+(c:/w32tex/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
 )
-(c:/w32tex/share/texmf-dist/tex/latex/eqparbox/eqparbox.sty
-Package: eqparbox 2013/03/15 v4.0 Create equal-widthed boxes
-\eqp@tempdima=\skip67
-\eqp@tempdimb=\skip68
-\eqp@tabular@box=\box58
-\eqp@list@box=\box59
-\eqp@list@indent=\skip69
+(c:/w32tex/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count117
+\Gm@cntv=\count118
+\c@Gm@tempcnt=\count119
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks27
 
-(c:/w32tex/share/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
+(c:/w32tex/share/texmf-dist/tex/latex/geometry/geometry.cfg)
 
-(c:/w32tex/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-)))
-(c:/w32tex/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package geometry Warning: \topskip was changed from 7.77588pt to 10.49995pt.
+
+) (c:/w32tex/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (c:/w32tex/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -508,7 +504,7 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen167
+\@linkdim=\dimen169
 \Hy@linkcounter=\count120
 \Hy@pagecounter=\count121
 
@@ -536,10 +532,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen168
+\XeTeXLinkMargin=\dimen170
 \Fld@menulength=\count124
-\Field@Width=\dimen169
-\Fld@charsize=\dimen170
+\Field@Width=\dimen171
+\Fld@charsize=\dimen172
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -558,7 +554,7 @@ Package hyperref Message: Driver: hdvipdfm.
 
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/hdvipdfm.def
 File: hdvipdfm.def 2012/11/06 v6.83m Hyperref driver for dvipdfm
-\pdfm@box=\box60
+\pdfm@box=\box58
 \c@Hy@AnnotLevel=\count128
 \HyField@AnnotCount=\count129
 \Fld@listcount=\count130
@@ -569,7 +565,7 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip70
+\Hy@SectionHShift=\skip67
 )
 (c:/w32tex/share/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
@@ -586,59 +582,58 @@ LaTeX Warning: Unused global option(s):
 (./lecture-note-no3.aux)
 \openout1 = `lecture-note-no3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 53.
  (c:/w32tex/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 49.
- (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: dvips
+(I search kanjifont definition file: . . )
+\AtBeginShipoutBox=\box59
+
+*geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
-* driver: dvips
+* driver: dvipdfm
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
+* lines: 47
+* hratio: 1:1
+* vratio: 1:1
 * modes: twoside 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(81.02669pt, 452.24161pt, 81.0267pt)
+* v-part:(T,H,B)=(47.23502pt, 700.49995pt, 47.23502pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=452.0pt
+* \textheight=700.0pt
+* \oddsidemargin=8.7567pt
+* \evensidemargin=8.75671pt
+* \topmargin=-62.03497pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=7.77588pt
+* \topskip=10.49995pt
 * \footskip=30.0pt
-* \marginparwidth=36.135pt
+* \marginparwidth=38.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -651,8 +646,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring ON on input line 49.
+Package hyperref Info: Link coloring ON on input line 53.
 (c:/w32tex/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -661,9 +655,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
 (./lecture-note-no3.out) (./lecture-note-no3.out)
 \@outlinefile=\write5
@@ -672,54 +666,54 @@ LaTeX Info: Redefining \nameref on input line 49.
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+phv on input line 52.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 57.
  (c:/w32tex/share/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 57.
 
 
 LaTeX Font Warning: Font shape `JT1/mc/bx/it' undefined
-(Font)              using `JT1/mc/bx/n' instead on input line 52.
+(Font)              using `JT1/mc/bx/n' instead on input line 57.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/bx/it' undefined
-(Font)              using `JY1/mc/bx/n' instead on input line 52.
+(Font)              using `JY1/mc/bx/n' instead on input line 57.
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/bx/it' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -727,53 +721,73 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 58.
 
-(./lecture-note-no3.toc)
+(./lecture-note-no3.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+)
 \tf@toc=\write6
 \openout6 = `lecture-note-no3.toc'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
+[]
+ []
+
+[2
+
+]
+第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 65.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 65.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
- [2
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 75.
+[3
 
-] [3] [4] [5]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 301.
+]
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] [5] [6]
+第 2 章
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 312.
 
 (c:/w32tex/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-No file lecture-note-no3.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+) (./lecture-note-no3.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
  (./lecture-note-no3.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 324.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
 Package rerunfilecheck Info: File `lecture-note-no3.out' has not changed.
-(rerunfilecheck)             Checksum: 08B23CE87B72B9C794083CE2B6A157AF;295.
+(rerunfilecheck)             Checksum: 935DAD7E920F9741D0F47F229DFD5EA0;277.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
  ) 
 Here is how much of TeX's memory you used:
- 9056 strings out of 493711
- 128668 string characters out of 6152389
- 236861 words of memory out of 5000000
- 12394 multiletter control sequences out of 15000+600000
- 38478 words of font info for 74 fonts, out of 8000000 for 9000
+ 9069 strings out of 493711
+ 129531 string characters out of 6152389
+ 238448 words of memory out of 5000000
+ 12426 multiletter control sequences out of 15000+600000
+ 40174 words of font info for 75 fonts, out of 8000000 for 9000
  930 hyphenation exceptions out of 8191
- 37i,23n,45p,290b,343s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 37i,23n,45p,290b,371s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on lecture-note-no3.dvi (6 pages, 29252 bytes).
+Output written on lecture-note-no3.dvi (7 pages, 29604 bytes).

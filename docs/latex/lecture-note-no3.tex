@@ -3,9 +3,9 @@
 \documentclass[letterpaper,10pt,dvipdfmx]{sphinxhowto}
 \ifdefined\pdfpxdimen
    \let\sphinxpxdimen\pdfpxdimen\else\newdimen\sphinxpxdimen
-\fi \sphinxpxdimen=49336sp\relax
+\fi \sphinxpxdimen=.75bp\relax
 
-\usepackage[margin=1in,marginparwidth=0.5in]{geometry}
+\PassOptionsToPackage{warn}{textcomp}
 
 
 \usepackage{cmap}
@@ -14,11 +14,10 @@
 
 \usepackage{times}
 
-\usepackage{longtable}
 \usepackage{sphinx}
 
-\usepackage{multirow}
-\usepackage{eqparbox}
+\fvset{fontsize=\small}
+\usepackage[dvipdfm]{geometry}
 
 % Include hyperref last.
 \usepackage{hyperref}
@@ -28,44 +27,52 @@
 \urlstyle{same}
 \renewcommand{\contentsname}{Contents:}
 
-\renewcommand{\figurename}{図 }
-\renewcommand{\tablename}{TABLE }
-\renewcommand{\literalblockname}{LIST }
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+\renewcommand{\literalblockname}{リスト}
+
+\renewcommand{\literalblockcontinuedname}{前のページからの続き}
+\renewcommand{\literalblockcontinuesname}{次のページに続く}
+\renewcommand{\sphinxnonalphabeticalgroupname}{Non-alphabetical}
+\renewcommand{\sphinxsymbolsname}{記号}
+\renewcommand{\sphinxnumbersname}{Numbers}
 
 \def\pageautorefname{ページ}
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 
 
 
 \title{note-3}
-\date{12月 14, 2018}
+\date{2018年12月14日}
 \release{1.0}
 \author{Emi Minamitani}
-\newcommand{\sphinxlogo}{}
+\newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{リリース}
 \makeindex
-
 \begin{document}
 
+\pagestyle{empty}
 \maketitle
+\pagestyle{plain}
 \sphinxtableofcontents
+\pagestyle{normal}
 \phantomsection\label{\detokenize{index::doc}}
 
 
 
-\section{多粒子系のハミルトニアンの実際と応用例}
-\label{\detokenize{index:id2}}\label{\detokenize{index:id1}}
+\chapter{多粒子系のハミルトニアンの実際と応用例}
+\label{\detokenize{index:id2}}
 前回までの講義で、場の演算子で表記することで、多体量子系でのハミルトニアンが１粒子系と
 似たような形で手に入ることや、場の演算子を生成消滅演算子と基底関数によって展開することで
 生成消滅演算子で表記されたハミルトニアンが得られることを紹介した。
 その具体的な応用例を紹介し、多体系での量子効果を扱う方法の感覚を紹介したい。
 
 
-\subsection{電子電子相互作用}
+\section{電子電子相互作用}
 \label{\detokenize{index:id3}}
 
-\subsubsection{アンダーソンモデル}
+\subsection{アンダーソンモデル}
 \label{\detokenize{index:id4}}
 電子電子相互作用を含むシンプルなモデルとしては、互いに相互作用をしない自由電子的な
 伝導電子と、局在した軌道に存在するため強い電子-電子相互作用を感じる局在電子とが
@@ -96,24 +103,27 @@ c_{k\sigma}^\dagger d_{\sigma} + h.c.)\end{split}
 の２つの電子数演算子のうち、片方を平均値にしてしまうという平均場近似で、あるUの値を境に磁性を持つ場合と持たない場合に
 区別されるということを提唱した。
 しかし、このような不連続性は近似が単純であったために生じており、実際はより複雑な状況が生じている。
-複雑さの原因は、十分に低温で熱ゆらぎが少ない場合には、
-伝導電子と局在電子がトンネル効果によってすり替わる過程を介して
-全体のエネルギーを下げることが許容される、伝導電子と局在電子がスピン1重項をとった状態が
-現れてくることにある。伝導電子が１つ２つならこの１重項形成は大して複雑な問題ではないが、
+複雑さの原因は、
+伝導電子と局在電子がトンネル効果によってすり替わる過程にある。
+十分に低温で熱ゆらぎが少ない場合には、この過程を介して、
+全体のエネルギーを下げる方向に働く。
+その結果、この過程が可能になる伝導電子と局在電子がスピン1重項をとった状態が
+基底状態として現れてくる。伝導電子が１つ２つならこの１重項形成は大して複雑な問題ではないが、
 実際に出てくるのは無数の伝導電子がゆるく局在電子と１重項を組んだ状態である。
-この状態では伝導電子がゆるく局在電子に束縛されることになるので、
-その結果、電気抵抗が上昇する。
+このような多体状態を扱うことは非常に難しい。
 
+そういった状態が実際にあらわれていることは、電気抵抗の異常として確認される。
 通常の金属では電気抵抗は
 温度を下げて行くと単調に減少し、
 不純物散乱に由来する残留抵抗が最後に残る。
-しかし、磁性不純物を含んだ金属では上記のように
-冷やしていくと、一旦さがったのちに電気抵抗が上がるという、電気抵抗に極小点が現れる
+しかし、磁性不純物を含んだ金属では上記のような状態があらわれ、
+伝導電子がゆるく局在電子に束縛されることになる結果、電気抵抗が上昇する。
+そのため、冷やしていくと、一旦さがったのちに電気抵抗が上がるという、電気抵抗に極小点が現れる
 という現象が起きる。これを近藤効果という。
 
 近藤効果自体は、1920年ごろから発見されており、上に述べたメカニズムは
 日本人の近藤淳先生や芳田奎先生らによって60年代にあらかた解明されていた。
-しかし、量子多体状態を扱う困難により、厳密解や数値的に高精度な解が得られるようになったのは
+しかし、前述した量子多体状態を扱う困難により、厳密解や数値的に高精度な解が得られるようになったのは
 80年代以降である。
 
 最近でも、量子ドットの電子と、量子ドットにつながる電極の電子の間で
@@ -121,7 +131,7 @@ c_{k\sigma}^\dagger d_{\sigma} + h.c.)\end{split}
 様々な系で起きることが報告されており、今だに研究が続けられている問題の一つである。
 
 
-\subsubsection{ハバードモデル}
+\subsection{ハバードモデル}
 \label{\detokenize{index:id5}}
 アンダーソンモデルと似ているが、ありとあらゆるところで電子-電子相互作用が強力な場合に
 相当するのがハバードモデルである。
@@ -146,14 +156,15 @@ c_{k\sigma}^\dagger d_{\sigma} + h.c.)\end{split}
 長らく研究がされているものの、高温超伝導を始めとして今だ決着がついていない物もある。
 
 
-\subsection{電子格子相互作用}
+\section{電子格子相互作用}
 \label{\detokenize{index:id6}}
 電子格子相互作用もまた、典型的な多体効果である。格子振動、すなわちフォノンが生じると、原子の座標の変化とともに
 電子が感じるポテンシャルの変化が生じる。それによって電子の波動関数が変調されるのが
 電子格子相互作用が生じる原理である。電子格子相互作用は、電気抵抗、ポーラロン形成、電荷密度波、熱電効果から超伝導に至るまで固体物理のなかの
 様々な現象の元になっている。
 
-まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書 {[}\#Mahan{]}\_をベースにしている。
+まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書
+{\color{red}\bfseries{}:cite:{}`Mahan{}`}  をベースにしている。
 電子とイオン、それらの振動から成るハミルトニアンは
 以下のように定義される。
 \begin{equation*}
@@ -172,7 +183,7 @@ H_{ei} = \sum_{ij} V(\bf{r_i} -  \bf{R_j})\end{aligned}\end{split}
 \begin{equation*}
 \begin{split}\begin{aligned}
 V({\bf r_i} - {\bf R_j^{0}}-{\bf Q_j})=V({\bf r_i} - {\bf
-R_j^{0}})-{\bf Q_j}\cdot \nabla V({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}\end{split}
+R_j^{0}})-{\bf Q_j}\cdot \nabla V_{ei}({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}\end{split}
 \end{equation*}
 が得られる。この第2項が電子フォノン相互作用を与える。
 第一項は、原子の変位がない状態での電子－イオン相互作用である。この第一項と\(H_e\)が
@@ -195,15 +206,15 @@ q})\exp^{i{\bf q\cdot r}}\end{aligned}\end{split}
 が得られる。 電子フォノン相互作用に相当する項全体を考えると
 \begin{equation*}
 \begin{split}\begin{aligned}
-V_{ep}&=\sum_j  {\bf Q_j}\cdot \nabla V(i{\bf r_i} - {\bf
-R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V(q) \exp^{i{\bf r_i} - {\bf
+V_{ep}&=\sum_j  {\bf Q_j}\cdot \nabla V_{ei}(i{\bf r_i} - {\bf
+R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V_{ei}(q) \exp^{i{\bf r_i} - {\bf
 R_j^{0}}} \nonumber \\
 &=\frac{i}{N} \sum_j \sum_q
-{\bf Q_j}\cdot  {\bf q}V(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
+{\bf Q_j}\cdot  {\bf q}V_{ei}(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
 \nonumber
 \\
 &= \frac{i}{N} \sum_j \sum_q {\bf Q_j} \exp^{-i{\bf q} \cdot {\bf
-R_j^{0}}}\cdot  {\bf q}V(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}\end{split}
+R_j^{0}}}\cdot  {\bf q}V_{ei}(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}\end{split}
 \end{equation*}
 変位ベクトルのフーリエ変換した形は
 \begin{equation*}
@@ -225,9 +236,9 @@ Mはイオンの質量である。変位ベクトルの時間依存性を無視�
 \begin{split}\begin{aligned}
 V_{ep}&=\frac{i}{N} \sum_j \sum_{qq'}
 \left(\frac{\hbar}{2MN\omega_q'}\right)^\frac{1}{2} \xi_q' (\alpha_q' +\alpha_q'^\dagger ) e^{i{\bf q'\cdot R_i^{(0)}}} \cdot e^{-i{\bf q} \cdot {\bf
-R_j^{0}}} \cdot  {\bf q}V(q)
+R_j^{0}}} \cdot  {\bf q}V_{ei}(q)
 e^{i {\bf q} \cdot{\bf r_i}}  \\
-&=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V(q) \cdot
+&=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V_{ei}(q) \cdot
 \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )\end{aligned}\end{split}
 \end{equation*}
 とすれば良いように思う。しかし、ここでqの和に関する問題を解消しなくてはいけない。
@@ -239,7 +250,7 @@ qを逆格子空間全域にしておくのは良くない。
 この表記を用いると
 \begin{equation*}
 \begin{split}\begin{aligned}
-V_{ep}=-\sum_{qG}e^{i {\bf (q+G)} \cdot{\bf r_i}} {\bf (q+G)}V(q+G) \cdot
+V_{ep}=-\sum_{qG}e^{i {\bf (q+G)} \cdot{\bf r_i}} {\bf (q+G)}V_{ei}(q+G) \cdot
 \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )
 \end{aligned}\end{split}
 \end{equation*}
@@ -262,7 +273,7 @@ i\mathbf{k} \cdot \mathbf{r} \right)}\end{aligned}\end{split}
 で表されるものとする。
 
 電子フォノン相互作用に相当する第二量子化形式のハミルトニアンは
-\phantomsection\label{\detokenize{index:equation-Hep}}\begin{equation}\label{equation:index:Hep}
+\begin{equation}\label{equation:index:Hep}
 \begin{split}H_{ep} &= - \sum_{\lambda}\int_{}^{}dr \psi^{\dagger}(r)V_{ep}(r)\psi(r) \\
 &= -i\sum_{\mathbf{k,k'},\eta,\eta^{'}} \sum_{\mathbf{qG}}
 \int dr\phi^*_{\mathbf{k'}\eta'}(r)e^{i(\mathbf{q+G}) \cdot
@@ -296,7 +307,7 @@ H_{ep} =
 \(M_{kq}^{\eta\eta'}\)は式(\eqref{equation:index:Hep})に含まれる、ポテンシャルの微分とブロッホ波動関数から得られる電子フォノン相互作用行列要素である。
 
 
-\section{References}
+\chapter{References}
 \label{\detokenize{index:references}}\begin{itemize}
 \item {} 
 \DUrole{xref,std,std-ref}{genindex}

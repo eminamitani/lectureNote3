@@ -1,35 +1,23 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
     <title>凝縮系物理学特論 講義資料その３ &#8212; note-3 1.0 ドキュメント</title>
-    
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" /> 
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
@@ -41,7 +29,7 @@
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">目次</a></h3>
+  <h3><a href="#">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">凝縮系物理学特論　講義資料その３</a><ul>
 <li><a class="reference internal" href="#id2">多粒子系のハミルトニアンの実際と応用例</a><ul>
@@ -67,12 +55,14 @@
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="検索" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -100,46 +90,49 @@
 <p>電子電子相互作用を含むシンプルなモデルとしては、互いに相互作用をしない自由電子的な
 伝導電子と、局在した軌道に存在するため強い電子-電子相互作用を感じる局在電子とが
 相互作用をする場合を考えた、アンダーソンモデルがあげられる。</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[H=\sum_{k\sigma} \epsilon_k c_{k\sigma}^\dagger c_{k\sigma}+\sum_{\sigma}E_d d_{\sigma}^\dagger
 d_{\sigma} +Un_{d\uparrow}n_{d\downarrow} +\sum_{k\sigma}(V_{0}
 c_{k\sigma}^\dagger d_{\sigma} + h.c.)\]</div>
-<p><span class="math">\(\sum_{k\sigma} \epsilon_k c_{k\sigma}^\dagger c_{k\sigma}\)</span>
+<p><span class="math notranslate nohighlight">\(\sum_{k\sigma} \epsilon_k c_{k\sigma}^\dagger c_{k\sigma}\)</span>
 は自由な伝導電子の部分を表している。
 この項だけならば、それぞれの波数の電子が
-<span class="math">\(\epsilon_k\)</span>
+<span class="math notranslate nohighlight">\(\epsilon_k\)</span>
 のエネルギーを持つという対角的なハミルトニアンになっている。
 しかし、その自由な伝導電子はトンネル効果によって局在軌道に入り込むことがある。
 それを記述しているのが
-<span class="math">\(\sum_{k\sigma}(V_{0} c_{k\sigma}^\dagger d_{\sigma} + h.c.)\)</span>
+<span class="math notranslate nohighlight">\(\sum_{k\sigma}(V_{0} c_{k\sigma}^\dagger d_{\sigma} + h.c.)\)</span>
 の部分である。
-<span class="math">\(Un_{d\uparrow}n_{d\downarrow}\)</span>
+<span class="math notranslate nohighlight">\(Un_{d\uparrow}n_{d\downarrow}\)</span>
 は局在電子が感じる電子間相互作用である。
-<span class="math">\(n_{d\uparrow}=d^\dagger_\uparrow d_\uparrow\)</span>
+<span class="math notranslate nohighlight">\(n_{d\uparrow}=d^\dagger_\uparrow d_\uparrow\)</span>
 のように電子数の演算子を書き直してやれば、前回の講義資料の最後に紹介した
 ２体のハミルトニアンに相当していることがわかるだろう。</p>
 <p>このアンダーソンモデルは当初、非磁性金属中の磁性原子不純物が磁性を持つか否かを議論するためのモデルとして提案された。
 提案者のアンダーソン自身は、
-<span class="math">\(Un_{d\uparrow}n_{d\downarrow}\)</span>
+<span class="math notranslate nohighlight">\(Un_{d\uparrow}n_{d\downarrow}\)</span>
 の２つの電子数演算子のうち、片方を平均値にしてしまうという平均場近似で、あるUの値を境に磁性を持つ場合と持たない場合に
 区別されるということを提唱した。
 しかし、このような不連続性は近似が単純であったために生じており、実際はより複雑な状況が生じている。
-複雑さの原因は、十分に低温で熱ゆらぎが少ない場合には、
-伝導電子と局在電子がトンネル効果によってすり替わる過程を介して
-全体のエネルギーを下げることが許容される、伝導電子と局在電子がスピン1重項をとった状態が
-現れてくることにある。伝導電子が１つ２つならこの１重項形成は大して複雑な問題ではないが、
+複雑さの原因は、
+伝導電子と局在電子がトンネル効果によってすり替わる過程にある。
+十分に低温で熱ゆらぎが少ない場合には、この過程を介して、
+全体のエネルギーを下げる方向に働く。
+その結果、この過程が可能になる伝導電子と局在電子がスピン1重項をとった状態が
+基底状態として現れてくる。伝導電子が１つ２つならこの１重項形成は大して複雑な問題ではないが、
 実際に出てくるのは無数の伝導電子がゆるく局在電子と１重項を組んだ状態である。
-この状態では伝導電子がゆるく局在電子に束縛されることになるので、
-その結果、電気抵抗が上昇する。</p>
-<p>通常の金属では電気抵抗は
+このような多体状態を扱うことは非常に難しい。</p>
+<p>そういった状態が実際にあらわれていることは、電気抵抗の異常として確認される。
+通常の金属では電気抵抗は
 温度を下げて行くと単調に減少し、
 不純物散乱に由来する残留抵抗が最後に残る。
-しかし、磁性不純物を含んだ金属では上記のように
-冷やしていくと、一旦さがったのちに電気抵抗が上がるという、電気抵抗に極小点が現れる
+しかし、磁性不純物を含んだ金属では上記のような状態があらわれ、
+伝導電子がゆるく局在電子に束縛されることになる結果、電気抵抗が上昇する。
+そのため、冷やしていくと、一旦さがったのちに電気抵抗が上がるという、電気抵抗に極小点が現れる
 という現象が起きる。これを近藤効果という。</p>
 <p>近藤効果自体は、1920年ごろから発見されており、上に述べたメカニズムは
 日本人の近藤淳先生や芳田奎先生らによって60年代にあらかた解明されていた。
-しかし、量子多体状態を扱う困難により、厳密解や数値的に高精度な解が得られるようになったのは
+しかし、前述した量子多体状態を扱う困難により、厳密解や数値的に高精度な解が得られるようになったのは
 80年代以降である。</p>
 <p>最近でも、量子ドットの電子と、量子ドットにつながる電極の電子の間で
 近藤効果が起きることや、分子系でも起きることなど、もともとの磁性不純物が入った金属以外に
@@ -151,13 +144,13 @@ c_{k\sigma}^\dagger d_{\sigma} + h.c.)\]</div>
 相当するのがハバードモデルである。
 ハバードモデルの場合は、局在電子と局在電子の間をホッピングする項と
 局在電子が感じる電子-電子相互作用の2つの項からなる。</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[H=\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.) +\sum_{i\sigma}Un_{d_i\uparrow}n_{d_i\downarrow}\]</div>
 <p>これはちょうど強束縛模型に電子間相互作用が加わったような形をしている。
 この模型がとくに対応するのが遷移金属酸化物である。
 遷移金属中のdやf電子は比較的原子に局在しており、酸素のp軌道を介して他の原子に飛び移ることができる。
 この飛び移りに対応するのが
-<span class="math">\(\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.)\)</span>
+<span class="math notranslate nohighlight">\(\sum_{i j\neq i\sigma}( t_{ij\sigma} d_{i\sigma}^\dagger d_{j\sigma}+h.c.)\)</span>
 の部分である。
 飛び移って運動エネルギーを稼ぐ効果と、電子間の相互作用が拮抗することで、
 ハバードモデルでは様々な状態が現れる。電子間相互作用のほうが飛び移りよりも大きければ、
@@ -175,11 +168,10 @@ c_{k\sigma}^\dagger d_{\sigma} + h.c.)\]</div>
 電子が感じるポテンシャルの変化が生じる。それによって電子の波動関数が変調されるのが
 電子格子相互作用が生じる原理である。電子格子相互作用は、電気抵抗、ポーラロン形成、電荷密度波、熱電効果から超伝導に至るまで固体物理のなかの
 様々な現象の元になっている。</p>
-<p>まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書
-<a class="footnote-reference" href="#mahan" id="id7">[1]</a> をベースにしている。
+<p>まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書をベースにしている。
 電子とイオン、それらの振動から成るハミルトニアンは
 以下のように定義される。</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 H=H_p+H_e+H_{ei} \\
 H_p=\sum_{q\lambda} \omega_{q\lambda} \alpha_{q\lambda}^\dagger
@@ -187,31 +179,31 @@ H_p=\sum_{q\lambda} \omega_{q\lambda} \alpha_{q\lambda}^\dagger
 H_e =\sum_{i} \left [ \frac{p_i^2}{2m} + \frac{e^2}{2} \sum_{j\neq i}
 \frac{1}{r_{ij}} \right] \\
 H_{ei} = \sum_{ij} V(\bf{r_i} -  \bf{R_j})\end{aligned}\end{split}\]</div>
-<p><span class="math">\(H_p\)</span>はフォノンのハミルトニアンであり、<span class="math">\(H_e\)</span>は電子系のハミルトニアン、そして<span class="math">\(H_{ei}\)</span>は電子とイオンの間の相互作用を表すハミルトニアンである。
-フォノンが生じるというのは<span class="math">\(H_{ei}\)</span>の中の<span class="math">\(\bf{R_j}\)</span>が変化することであると捉えることができる。
-平衡状態での原子の座標を<span class="math">\(\bf{R_j^{0}}\)</span>として、一般的な座標を変位<span class="math">\(\bf{Q_j}\)</span>を用いて<span class="math">\(\bf{R_j}=\bf{R_j^{0}}+\bf{Q_j}\)</span>
+<p><span class="math notranslate nohighlight">\(H_p\)</span>はフォノンのハミルトニアンであり、<span class="math notranslate nohighlight">\(H_e\)</span>は電子系のハミルトニアン、そして<span class="math notranslate nohighlight">\(H_{ei}\)</span>は電子とイオンの間の相互作用を表すハミルトニアンである。
+フォノンが生じるというのは<span class="math notranslate nohighlight">\(H_{ei}\)</span>の中の<span class="math notranslate nohighlight">\(\bf{R_j}\)</span>が変化することであると捉えることができる。
+平衡状態での原子の座標を<span class="math notranslate nohighlight">\(\bf{R_j^{0}}\)</span>として、一般的な座標を変位<span class="math notranslate nohighlight">\(\bf{Q_j}\)</span>を用いて<span class="math notranslate nohighlight">\(\bf{R_j}=\bf{R_j^{0}}+\bf{Q_j}\)</span>
 で表す。変位は小さいものとして、変位についてのテイラー展開を実行すると</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 V({\bf r_i} - {\bf R_j^{0}}-{\bf Q_j})=V({\bf r_i} - {\bf
 R_j^{0}})-{\bf Q_j}\cdot \nabla V_{ei}({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}\]</div>
 <p>が得られる。この第2項が電子フォノン相互作用を与える。
-第一項は、原子の変位がない状態での電子－イオン相互作用である。この第一項と<span class="math">\(H_e\)</span>が
+第一項は、原子の変位がない状態での電子－イオン相互作用である。この第一項と<span class="math notranslate nohighlight">\(H_e\)</span>が
 電子系の無摂動ハミルトニアンであるとみなし、そのBloch状態を元に、摂動である第2項の評価を行うのが
 ボルン・オッペンハイマー近似に則った通常の評価方法である。動的ヤーンテラー効果等の場合にはこの方法はうまくいかない。</p>
-<p>第二項が電子フォノン相互作用であることは、変位<span class="math">\(\bf{Q_j}\)</span>をフォノンの生成消滅演算子を使って書き直せば分かる。
+<p>第二項が電子フォノン相互作用であることは、変位<span class="math notranslate nohighlight">\(\bf{Q_j}\)</span>をフォノンの生成消滅演算子を使って書き直せば分かる。
 フォノンは通常「格子振動」であり、結晶についての議論をされることが多いので、逆格子空間をつかったフーリエ変換した形で考えてみる。
 電子イオン相互作用のフーリエ変換は</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 V_{ei} ({\bf r}) = \frac{1}{N} \sum_{q} V_{ei}({\bf q})\exp^{i{\bf q\cdot r}}\end{aligned}\]</div>
 <p>である。これを微分することで</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 \nabla V_{ei} ({\bf r}) = \frac{i}{N} \sum_{q} {\bf q} V_{ei}({\bf
 q})\exp^{i{\bf q\cdot r}}\end{aligned}\]</div>
 <p>が得られる。 電子フォノン相互作用に相当する項全体を考えると</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 V_{ep}&amp;=\sum_j  {\bf Q_j}\cdot \nabla V_{ei}(i{\bf r_i} - {\bf
 R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V_{ei}(q) \exp^{i{\bf r_i} - {\bf
@@ -223,20 +215,20 @@ R_j^{0}}} \nonumber \\
 &amp;= \frac{i}{N} \sum_j \sum_q {\bf Q_j} \exp^{-i{\bf q} \cdot {\bf
 R_j^{0}}}\cdot  {\bf q}V_{ei}(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}\end{split}\]</div>
 <p>変位ベクトルのフーリエ変換した形は</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 {\bf Q_j}(t)=i\sum_q \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q
 (\alpha_q \exp^{(-i\omega_q t)}+\alpha_q^\dagger \exp^{(i\omega_q t)})
 \exp^{(i{\bf q\cdot R_i^{(0)}})}\end{aligned}\]</div>
-<p>で与えられる。<span class="math">\(\xi_q\)</span>は偏極ベクトルと呼ばれる、振動モードによって原子がどの方向に変位するかを表す3N（3次元の場合）の要素数を持つベクトルである。
+<p>で与えられる。<span class="math notranslate nohighlight">\(\xi_q\)</span>は偏極ベクトルと呼ばれる、振動モードによって原子がどの方向に変位するかを表す3N（3次元の場合）の要素数を持つベクトルである。
 Mはイオンの質量である。変位ベクトルの時間依存性を無視して</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 {\bf Q_j}(t)=i\sum_q \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q
 (\alpha_q +\alpha_q^\dagger )
 \exp^{(i{\bf q\cdot R_i^{(0)}})}\end{aligned}\]</div>
 <p>とし、これを電子フォノン相互作用の項に代入してやれば</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 V_{ep}&amp;=\frac{i}{N} \sum_j \sum_{qq'}
 \left(\frac{\hbar}{2MN\omega_q'}\right)^\frac{1}{2} \xi_q' (\alpha_q' +\alpha_q'^\dagger ) e^{i{\bf q'\cdot R_i^{(0)}}} \cdot e^{-i{\bf q} \cdot {\bf
@@ -251,28 +243,28 @@ e^{i {\bf q} \cdot{\bf r_i}}  \\
 qを逆格子空間全域にしておくのは良くない。
 そこで、電子の場合と同様に、波数空間内での和を、第一ブリルアンゾーン内の波数qと逆格子ベクトルGに関する和で表現することを行う。
 この表記を用いると</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
-V_{ep}=-\sum_{qG}e^{i {\bf (q+G)} \cdot{\bf r_i}} {\bf (q+G)}V(q+G) \cdot
+V_{ep}=-\sum_{qG}e^{i {\bf (q+G)} \cdot{\bf r_i}} {\bf (q+G)}V_{ei}(q+G) \cdot
 \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )
 \end{aligned}\]</div>
-<p>が最終的に得られる。 このポテンシャル <span class="math">\(V_{ep}\)</span> を元に第二量子化形式のハミルトニアンを求めておく。</p>
+<p>が最終的に得られる。 このポテンシャル <span class="math notranslate nohighlight">\(V_{ep}\)</span> を元に第二量子化形式のハミルトニアンを求めておく。</p>
 <p>ブロッホ波動関数を用いた電子の場の演算子を以下のように定義する。</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 \psi(r) = \sum_{\mathbf{k},\eta}c_{\mathbf{k}\eta}\phi_{\mathbf{k}\eta}(r), \\
 \psi^{\dagger}\left( r \right) =
 \sum_{\mathbf{k},\eta}{c_{\mathbf{k}\eta}^{\dagger}\phi_{\mathbf{k}\eta}^{*}(r)}\end{aligned}\end{split}\]</div>
-<p>ここで<span class="math">\(\phi_{\mathbf{k}\eta}(r)\)</span>は第一ブリルアンゾーン内の波数<span class="math">\(\mathbf{k}\)</span>を持つバンド<span class="math">\(\eta\)</span>の電子状態のブロッホ波動関数であり、
-<span class="math">\(c_{\mathbf{k}\eta}\)</span>はその電子状態に対する消滅演算子を指す。ブロッホ波動関数は</p>
-<div class="math">
+<p>ここで<span class="math notranslate nohighlight">\(\phi_{\mathbf{k}\eta}(r)\)</span>は第一ブリルアンゾーン内の波数<span class="math notranslate nohighlight">\(\mathbf{k}\)</span>を持つバンド<span class="math notranslate nohighlight">\(\eta\)</span>の電子状態のブロッホ波動関数であり、
+<span class="math notranslate nohighlight">\(c_{\mathbf{k}\eta}\)</span>はその電子状態に対する消滅演算子を指す。ブロッホ波動関数は</p>
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 \phi_{\mathbf{k}\eta}\left( r \right) = u_{\mathbf{k}\eta}\exp{\left(
 i\mathbf{k} \cdot \mathbf{r} \right)}\end{aligned}\]</div>
 <p>で表されるものとする。</p>
 <p>電子フォノン相互作用に相当する第二量子化形式のハミルトニアンは</p>
-<div class="math" id="equation-Hep">
-<span class="eqno">(1)<a class="headerlink" href="#equation-Hep" title="この数式へのパーマリンク">¶</a></span>\[\begin{split}H_{ep} &amp;= - \sum_{\lambda}\int_{}^{}dr \psi^{\dagger}(r)V_{ep}(r)\psi(r) \\
+<div class="math notranslate nohighlight" id="equation-hep">
+<span class="eqno">(1)<a class="headerlink" href="#equation-hep" title="この数式へのパーマリンク">¶</a></span>\[\begin{split}H_{ep} &amp;= - \sum_{\lambda}\int_{}^{}dr \psi^{\dagger}(r)V_{ep}(r)\psi(r) \\
 &amp;= -i\sum_{\mathbf{k,k'},\eta,\eta^{'}} \sum_{\mathbf{qG}}
 \int dr\phi^*_{\mathbf{k'}\eta'}(r)e^{i(\mathbf{q+G}) \cdot
 \mathbf{r}} \mathbf{\xi}_{\mathbf{q}}\cdot
@@ -288,29 +280,23 @@ u_{\mathbf{k'}\eta'}^{*}\ e^{i (\mathbf{k -k'+ q +G}) \cdot \mathbf{r}}
 &amp; \left( \frac{\hbar}{2MN\omega_{q}}
 \right)^{\frac{1}{2}}\ u_{\mathbf{k}\eta}\ c_{\mathbf{k'}\eta'}^{\dagger}c_{\mathbf{k}\eta}
 \left( \alpha_{q}+ \alpha_{-q}^{\dagger} \right)\end{split}\]</div>
-<p>で表される。この積分は<span class="math">\(\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{}\mathbf{= q}\)</span>
-または<span class="math">\(\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{} = \mathbf{q} + \mathbf{G}\)</span>の場合のみ、有限の値を持つ。前者の場合をNormal
+<p>で表される。この積分は<span class="math notranslate nohighlight">\(\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{}\mathbf{= q}\)</span>
+または<span class="math notranslate nohighlight">\(\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{} = \mathbf{q} + \mathbf{G}\)</span>の場合のみ、有限の値を持つ。前者の場合をNormal
 process、後者をUmklapp processと呼ぶ。</p>
 <p>このような議論から、一般に、電子フォノン相互作用は</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{aligned}
 H_{ep} =
 \sum_{\mathbf{k}\eta\eta'}{\sum_{\mathbf{q}}^{}M_{\mathbf{kq}}^{\eta\eta'}}c_{\mathbf{k
 + q}\eta'}^{\dagger}c_{\mathbf{k}\eta}\left(\alpha_q+ \alpha_{-q}^{\dagger} \right)\end{aligned}\]</div>
-<p>の形にかけることが分かる。これは、ちょうど波数<span class="math">\(\mathbf{k}\)</span>バンド<span class="math">\(\eta\)</span>の電子が波数<span class="math">\(\mathbf{q}\)</span>
-(<span class="math">\(- \mathbf{q}\)</span>)のフォノンを吸収（放出）することで波数<span class="math">\(\mathbf{k + q}\)</span>バンド<span class="math">\(\eta'\)</span>の電子が生じるプロセスに対応している。
-<span class="math">\(M_{kq}^{\eta\eta'}\)</span>は式(<a class="reference internal" href="#equation-Hep">(1)</a>)に含まれる、ポテンシャルの微分とブロッホ波動関数から得られる電子フォノン相互作用行列要素である。</p>
+<p>の形にかけることが分かる。これは、ちょうど波数<span class="math notranslate nohighlight">\(\mathbf{k}\)</span>バンド<span class="math notranslate nohighlight">\(\eta\)</span>の電子が波数<span class="math notranslate nohighlight">\(\mathbf{q}\)</span>
+(<span class="math notranslate nohighlight">\(- \mathbf{q}\)</span>)のフォノンを吸収（放出）することで波数<span class="math notranslate nohighlight">\(\mathbf{k + q}\)</span>バンド<span class="math notranslate nohighlight">\(\eta'\)</span>の電子が生じるプロセスに対応している。
+<span class="math notranslate nohighlight">\(M_{kq}^{\eta\eta'}\)</span>は式(<a class="reference internal" href="#equation-hep">(1)</a>)に含まれる、ポテンシャルの微分とブロッホ波動関数から得られる電子フォノン相互作用行列要素である。</p>
 </div>
 </div>
 </div>
 <div class="section" id="references">
 <h1>References<a class="headerlink" href="#references" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<table class="docutils footnote" frame="void" id="mahan" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id7">[1]</a></td><td>Many-Particle Physics.</td></tr>
-</tbody>
-</table>
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></li>
 <li><a class="reference internal" href="search.html"><span class="std std-ref">検索ページ</span></a></li>
@@ -334,7 +320,7 @@ H_{ep} =
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2018, Emi Minamitani.
-      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.1 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2 で生成しました。
     </div>
   </body>
 </html>

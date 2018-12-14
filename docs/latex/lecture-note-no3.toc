@@ -1,6 +1,6 @@
-\contentsline {section}{\numberline {0.1}多粒子系のハミルトニアンの実際と応用例}{2}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}電子電子相互作用}{2}{subsection.0.1.1}
-\contentsline {subsubsection}{アンダーソンモデル}{2}{subsubsection*.3}
-\contentsline {subsubsection}{ハバードモデル}{3}{subsubsection*.4}
-\contentsline {subsection}{\numberline {0.1.2}電子格子相互作用}{3}{subsection.0.1.2}
-\contentsline {section}{\numberline {0.2}References}{6}{section.0.2}
+\contentsline {chapter}{\numberline {第1章}多粒子系のハミルトニアンの実際と応用例}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}電子電子相互作用}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}アンダーソンモデル}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}ハバードモデル}{4}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}電子格子相互作用}{4}{section.1.2}
+\contentsline {chapter}{\numberline {第2章}References}{7}{chapter.2}
