@@ -110,7 +110,8 @@
 電子格子相互作用が生じる原理である。電子格子相互作用は、電気抵抗、ポーラロン形成、電荷密度波、熱電効果から超伝導に至るまで固体物理のなかの
 様々な現象の元になっている。
 
-まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書 [#Mahan]_をベースにしている。
+まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書
+[#Mahan]_ をベースにしている。
 電子とイオン、それらの振動から成るハミルトニアンは
 以下のように定義される。
 
@@ -133,7 +134,7 @@
 
    \begin{aligned}
    V({\bf r_i} - {\bf R_j^{0}}-{\bf Q_j})=V({\bf r_i} - {\bf
-   R_j^{0}})-{\bf Q_j}\cdot \nabla V({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}
+   R_j^{0}})-{\bf Q_j}\cdot \nabla V_{ei}({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}
 
 が得られる。この第2項が電子フォノン相互作用を与える。
 第一項は、原子の変位がない状態での電子－イオン相互作用である。この第一項と\ :math:`H_e`\ が
@@ -162,15 +163,15 @@
 .. math::
 
    \begin{aligned}
-   V_{ep}&=\sum_j  {\bf Q_j}\cdot \nabla V(i{\bf r_i} - {\bf
-   R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V(q) \exp^{i{\bf r_i} - {\bf
+   V_{ep}&=\sum_j  {\bf Q_j}\cdot \nabla V_{ei}(i{\bf r_i} - {\bf
+   R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V_{ei}(q) \exp^{i{\bf r_i} - {\bf
    R_j^{0}}} \nonumber \\
    &=\frac{i}{N} \sum_j \sum_q
-   {\bf Q_j}\cdot  {\bf q}V(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
+   {\bf Q_j}\cdot  {\bf q}V_{ei}(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
    \nonumber
    \\
    &= \frac{i}{N} \sum_j \sum_q {\bf Q_j} \exp^{-i{\bf q} \cdot {\bf
-   R_j^{0}}}\cdot  {\bf q}V(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}
+   R_j^{0}}}\cdot  {\bf q}V_{ei}(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}
 
 変位ベクトルのフーリエ変換した形は
 
@@ -198,9 +199,9 @@ Mはイオンの質量である。変位ベクトルの時間依存性を無視�
    \begin{aligned}
    V_{ep}&=\frac{i}{N} \sum_j \sum_{qq'}
    \left(\frac{\hbar}{2MN\omega_q'}\right)^\frac{1}{2} \xi_q' (\alpha_q' +\alpha_q'^\dagger ) e^{i{\bf q'\cdot R_i^{(0)}}} \cdot e^{-i{\bf q} \cdot {\bf
-   R_j^{0}}} \cdot  {\bf q}V(q)
+   R_j^{0}}} \cdot  {\bf q}V_{ei}(q)
    e^{i {\bf q} \cdot{\bf r_i}}  \\
-   &=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V(q) \cdot
+   &=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V_{ei}(q) \cdot
    \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )\end{aligned}
 
 とすれば良いように思う。しかし、ここでqの和に関する問題を解消しなくてはいけない。
@@ -283,7 +284,8 @@ process、後者をUmklapp processと呼ぶ。
 
 References
 ==================
-.. [#Mahan] Many-Particle Physics
+.. rubric::
+.. [#Mahan] Many-Particle Physics.
 
 * :ref:`genindex`
 * :ref:`search`

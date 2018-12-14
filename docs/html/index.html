@@ -175,7 +175,8 @@ c_{k\sigma}^\dagger d_{\sigma} + h.c.)\]</div>
 電子が感じるポテンシャルの変化が生じる。それによって電子の波動関数が変調されるのが
 電子格子相互作用が生じる原理である。電子格子相互作用は、電気抵抗、ポーラロン形成、電荷密度波、熱電効果から超伝導に至るまで固体物理のなかの
 様々な現象の元になっている。</p>
-<p>まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書 [#Mahan]_をベースにしている。
+<p>まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書
+<a class="footnote-reference" href="#mahan" id="id7">[1]</a> をベースにしている。
 電子とイオン、それらの振動から成るハミルトニアンは
 以下のように定義される。</p>
 <div class="math">
@@ -193,7 +194,7 @@ H_{ei} = \sum_{ij} V(\bf{r_i} -  \bf{R_j})\end{aligned}\end{split}\]</div>
 <div class="math">
 \[\begin{aligned}
 V({\bf r_i} - {\bf R_j^{0}}-{\bf Q_j})=V({\bf r_i} - {\bf
-R_j^{0}})-{\bf Q_j}\cdot \nabla V({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}\]</div>
+R_j^{0}})-{\bf Q_j}\cdot \nabla V_{ei}({\bf r_i} - {\bf R_j^{0}}) +O(Q^2)\end{aligned}\]</div>
 <p>が得られる。この第2項が電子フォノン相互作用を与える。
 第一項は、原子の変位がない状態での電子－イオン相互作用である。この第一項と<span class="math">\(H_e\)</span>が
 電子系の無摂動ハミルトニアンであるとみなし、そのBloch状態を元に、摂動である第2項の評価を行うのが
@@ -212,15 +213,15 @@ q})\exp^{i{\bf q\cdot r}}\end{aligned}\]</div>
 <p>が得られる。 電子フォノン相互作用に相当する項全体を考えると</p>
 <div class="math">
 \[\begin{split}\begin{aligned}
-V_{ep}&amp;=\sum_j  {\bf Q_j}\cdot \nabla V(i{\bf r_i} - {\bf
-R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V(q) \exp^{i{\bf r_i} - {\bf
+V_{ep}&amp;=\sum_j  {\bf Q_j}\cdot \nabla V_{ei}(i{\bf r_i} - {\bf
+R_j^{0}})=\sum_j \sum_q {\bf Q_j}\cdot \nabla V_{ei}(q) \exp^{i{\bf r_i} - {\bf
 R_j^{0}}} \nonumber \\
 &amp;=\frac{i}{N} \sum_j \sum_q
-{\bf Q_j}\cdot  {\bf q}V(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
+{\bf Q_j}\cdot  {\bf q}V_{ei}(q) \exp^{i{\bf q} \cdot ({\bf r_i} - {\bf R_j^{0}})}
 \nonumber
 \\
 &amp;= \frac{i}{N} \sum_j \sum_q {\bf Q_j} \exp^{-i{\bf q} \cdot {\bf
-R_j^{0}}}\cdot  {\bf q}V(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}\end{split}\]</div>
+R_j^{0}}}\cdot  {\bf q}V_{ei}(q) \exp^{i {\bf q} \cdot{\bf r_i}}\end{aligned}\end{split}\]</div>
 <p>変位ベクトルのフーリエ変換した形は</p>
 <div class="math">
 \[\begin{aligned}
@@ -239,9 +240,9 @@ Mはイオンの質量である。変位ベクトルの時間依存性を無視�
 \[\begin{split}\begin{aligned}
 V_{ep}&amp;=\frac{i}{N} \sum_j \sum_{qq'}
 \left(\frac{\hbar}{2MN\omega_q'}\right)^\frac{1}{2} \xi_q' (\alpha_q' +\alpha_q'^\dagger ) e^{i{\bf q'\cdot R_i^{(0)}}} \cdot e^{-i{\bf q} \cdot {\bf
-R_j^{0}}} \cdot  {\bf q}V(q)
+R_j^{0}}} \cdot  {\bf q}V_{ei}(q)
 e^{i {\bf q} \cdot{\bf r_i}}  \\
-&amp;=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V(q) \cdot
+&amp;=-\sum_{q}e^{i {\bf q} \cdot{\bf r_i}} {\bf q}V_{ei}(q) \cdot
 \left(\frac{\hbar}{2MN\omega_q} \right)^\frac{1}{2} \xi_q (\alpha_q +\alpha_q^\dagger )\end{aligned}\end{split}\]</div>
 <p>とすれば良いように思う。しかし、ここでqの和に関する問題を解消しなくてはいけない。
 ここでのqはフーリエ変換から定義されるものなので、逆格子空間全域をカバーする。
@@ -307,7 +308,7 @@ H_{ep} =
 <table class="docutils footnote" frame="void" id="mahan" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[1]</td><td>Many-Particle Physics</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id7">[1]</a></td><td>Many-Particle Physics.</td></tr>
 </tbody>
 </table>
 <ul class="simple">
