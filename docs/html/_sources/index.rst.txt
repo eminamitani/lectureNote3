@@ -110,7 +110,7 @@
 電子格子相互作用が生じる原理である。電子格子相互作用は、電気抵抗、ポーラロン形成、電荷密度波、熱電効果から超伝導に至るまで固体物理のなかの
 様々な現象の元になっている。
 
-まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書 [Ref1]_をベースにしている。
+まず、非常に簡単な電子フォノン相互作用の導出から始めよう。以下の導出は主にMahanの教科書 [#Mahan]_をベースにしている。
 電子とイオン、それらの振動から成るハミルトニアンは
 以下のように定義される。
 
@@ -258,7 +258,7 @@ qを逆格子空間全域にしておくのは良くない。
    + \mathbf{G} \right)\nonumber \\
    & \left( \frac{\hbar}{2MN\omega_{q}}
    \right)^{\frac{1}{2}}\ u_{\mathbf{k}\eta}\ c_{\mathbf{k'}\eta'}^{\dagger}c_{\mathbf{k}\eta}
-   \left( \alpha_{q}+ \alpha_{-q}^{\dagger} \right) 
+   \left( \alpha_{q}+ \alpha_{-q}^{\dagger} \right)
    :label: Hep
 
 で表される。この積分は\ :math:`\mathbf{k}^{\mathbf{'}}\mathbf{-}\mathbf{k}^{}\mathbf{= q}`
@@ -278,12 +278,12 @@ process、後者をUmklapp processと呼ぶ。
 (:math:`- \mathbf{q}`)のフォノンを吸収（放出）することで波数\ :math:`\mathbf{k + q}`\ バンド\ :math:`\eta'`\ の電子が生じるプロセスに対応している。
 :math:`M_{kq}^{\eta\eta'}`\ は式(:eq:`Hep`)に含まれる、ポテンシャルの微分とブロッホ波動関数から得られる電子フォノン相互作用行列要素である。
 
-半導体における電子フォノン相互作用
+
 
 
 References
 ==================
-.. [Ref1] Many-Particle Physics
+.. [#Mahan] Many-Particle Physics
 
 * :ref:`genindex`
 * :ref:`search`
